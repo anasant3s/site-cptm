@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    /* z-index: 0; */
+}
+
+.logo-header img {
+    width: 120px;
+    position: relative;
+    top: 0;
+    margin: 0;
+    right: 80px;
+    
+}
+
+.header, 
+.navigation-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navigation-header a:hover{
+    background: #e00b0b9f;
+    transition: all .5s;
+}
+
+.header {
+    position: relative;
+    background-color: rgb(240, 240, 240) ;
+    box-shadow: 1px 1px 4px var(--color-dark2);
+    height: 4em;
+    justify-content:space-between;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px /* eixo x */ 5px /* eixo y */15px /* sombra */ rgba(0, 0, 0, 0.2);   /* Voltar aqui */
+    /* z-index: 1000; */
+}
+
+.navigation-header a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: #e00b0b;
+    padding: 1px 8px;
+    border-radius: 7px;
+    text-transform: uppercase;
+    font-size: medium;
+    font-weight: bold;
+
+}
+
+.navigation-header {
+    gap: 2.99em;
+}
+
+.main {
+    background: url(../img/teste-bg4.jpg) no-repeat;
+    background-size:cover ;
+    background-position: center;
+}
+/* cards */
+.hero {  /* primeira parte */
+    height: 300px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-text {
+    text-align: center;
+}
+ 
+.hero-text h1 {
+    font-size: 3em;
+}
+ 
+.hero-text p {
+    font-size: 1.2em;
+}
+/* botao */
+.btn {
+    background: #000;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-top: 210px;
+}
+
+/* cards */
+.services {
+    padding: 40px 20px;
+    text-align: center;
+}
+ 
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+ 
+.card h3 {
+    color: #e50000;
+}
+ 
+.card a {
+    text-decoration: none;
+    color: #e50000;
+    font-weight: bold;
+}
+.card:hover {
+    background: #a5a2a2ad; 
+  }
+ 
+.status {
+    background: #f0f0f0;
+    padding: 40px 20px;
+    text-align: center;
+}
+.status-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+/* efeito hover dos cards status */
+.line-status:hover {
+    background: #dad4d4; 
+  }
+
+/* cards do status da linha */
+.line-status {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+/* footer */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+/* importar a fonte do google*/
+:root{
+    --color-neutral-0: rgb(177, 175, 175); /*fundo */
+    --color-neutral-10: #000000;  /* cor da letra*/
+    --color-neutral-30: #971616;  /*HOVER */
+    --color-neutral-40: #fcfcfc; /* cor do icone*/
+    
+}
+*{
+    font-family: 'Inter', sans-serif; 
+    margin: 0;
+    padding: 0; /* remove os espaçamentos*/
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+footer{
+    width: 100%;
+    color: var(--color-neutral-10);
+}
+#footer_content{
+    background-color: var(--color-neutral-0);
+    display: grid;
+    grid-template-columns: repeat(3,1fr); /* coloca a qntd de colunas*/
+    padding: 3rem 3.5rem; /* espaçamento*/
+}
+.footer-link{
+    text-decoration: none; /* remove o link*/ 
+   
+}
+.footer-list{
+   display: flex;
+   flex-direction: column;
+   gap: 0.75rem;
+   list-style: none;
+}
+.footer-list .footer-link{
+    color: var(--color-neutral-10);
+ }
+ .footer-list .footer-link:hover{
+    color: var(--color-neutral-30);
+    transition: all 0.6s;
+    font-weight: bold;
+ }
+
+#footer_contacts h4{
+     margin-bottom: 0.75rem;
+}
+#footer_social_media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+/*
+main{  é usado p caso queira mandar p baixo
+   
+} */
+#footer_social_media .footer-link{
+   display: flex; /* CENTRALIZA */
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 60%;
+    transition: all 0.6s;
+}
+#footer_social_media .footer-link:hover{
+    opacity: 0.8;
+}
+#input_group{
+    display: flex;
+    align-items: center;
+    background-color: gainsboro;
+    border-radius: 3px;
+}
+#input_group{
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button:hover{
+    transition: all 0.8s;
+}
+#instagram{
+  background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+#facebook{
+    background: linear-gradient(#1800f1, #0400db, #0024f3);
+}
+#whatsapp{
+    background: linear-gradient(#06963d, #23ca4d, #29a548);
+}
+/* responsividade*/
+@media screen and (max-width: 768px){
+    #footer_content{
+        grid-template-columns: repeat(1,1fr);
+        gap: 2rem;
+    }
+}

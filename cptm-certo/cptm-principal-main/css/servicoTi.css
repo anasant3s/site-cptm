@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap'); /* Importa fontes do Google Fonts */
+* {
+    padding: 0; /* Remove padding padrão de todos os elementos */
+    margin: 0; /* Remove margem padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui padding e borda no tamanho total dos elementos */
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    font-size: 1em;
+    min-height: 100vh;
+
+
+}
+
+.logo-header img {
+    width: 120px;
+    position: relative;
+    top: 0;
+    margin: 0;
+    right: 80px;
+    
+}
+
+.header, 
+.navigation-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navigation-header a:hover{
+    background: #e00b0b9f;
+    transition: all .5s;
+}
+
+.header {
+    position: relative;
+    background-color: rgb(240, 240, 240) ;
+    box-shadow: 1px 1px 4px var(--color-dark2);
+    height: 5em;
+    justify-content:space-between;
+    padding: 0 10%;
+    /* display: flex;
+    align-items: center; */
+    box-shadow: 0px /* eixo x */ 5px /* eixo y */15px /* sombra */ rgba(0, 0, 0, 0.2);   /* Voltar aqui */
+}
+
+.navigation-header a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: #e00b0b;
+    padding: 1px 8px;
+    border-radius: 7px;
+    text-transform: uppercase;
+    font-size: medium;
+    font-weight: bold;
+    
+}
+
+
+.navigation-header {
+    gap: 3.98em;
+}
+
+
+.container {
+    width: 90%; /* Define a largura do container como 90% da tela */
+    max-width: 1200px; /* Define a largura máxima do container */
+    height: auto; /* Define a altura automática do container */
+    display: flex; /* Usa flexbox para o layout do container */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212); /* Adiciona sombra ao container */
+    border-radius: 15px; /* Adiciona bordas arredondadas ao container */
+    overflow: hidden; /* Garante que nada saia do container */
+    background-color: #fff; /* Define a cor de fundo do container */
+    position: absolute; /* Permite centralizar em relação ao body */
+    top: 52%; /* Coloca no meio da tela */
+    left: 50%; /* Coloca no meio da tela */
+    transform: translate(-50%, -50%); 
+    
+
+}
+
+.form-image-logo {
+    position: absolute; /* Posiciona o logo de forma absoluta dentro do container */
+}
+
+.form-image-logo img {
+    width: 150px; /* Define a largura da imagem do logo */
+    height: auto; /* Mantém a proporção da imagem */
+    padding: 1rem; /* Adiciona padding à imagem do logo */
+}
+
+.form-image {
+    width: 75%; /* Define a largura da área da imagem do formulário */
+    display: flex; /* Usa flexbox para o layout da área da imagem */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    position: relative; /* Necessário para o posicionamento do logo */
+    padding: 1rem; /* Adiciona padding à área da imagem */
+}
+
+.form-image img {
+    max-width: 100%; /* Garante que a imagem não exceda a largura da área da imagem */
+    border-radius: 2rem; /* Adiciona bordas arredondadas à imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.form {
+    width: 60%; /* Define a largura da área do formulário */
+    display: flex; /* Usa flexbox para o layout da área do formulário */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    flex-direction: column; /* Alinha os itens em coluna */
+    background-color: #fff; /* Define a cor de fundo da área do formulário */
+    padding: 2rem; /* Adiciona padding à área do formulário */
+}
+
+.form-header {
+    margin-bottom: 3rem; /* Ajusta a margem inferior do cabeçalho do formulário */
+    display: flex; /* Usa flexbox para o layout do cabeçalho */
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    text-align: center; /* Centraliza o texto */
+}
+
+.form-header h1::after {
+    content: " "; /* Adiciona conteúdo vazio após o título */
+    display: block; /* Exibe o conteúdo como um bloco */
+    width: 5rem; /* Define a largura do conteúdo */
+    height: 0.3rem; /* Define a altura do conteúdo */
+    background-color: darkred; /* Define a cor de fundo do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    position: absolute; /* Posiciona o conteúdo de forma absoluta */
+    border-radius: 10px; /* Adiciona bordas arredondadas ao conteúdo */
+}
+
+.input-group {
+    display: flex; /* Usa flexbox para o layout do grupo de inputs */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    justify-content: space-between; /* Distribui os itens com espaço entre eles */
+    gap: 1rem; /* Adiciona espaço entre os campos */
+}
+
+.input-box {
+    flex: 1 1 45%; /* Faz com que os campos ocupem cerca de 45% da largura do container */
+    display: flex; /* Usa flexbox para o layout da caixa de input */
+    flex-direction: column; /* Alinha os itens em coluna */
+}
+
+.input-box input {
+    margin: 0.5rem; /* Adiciona margem ao redor dos inputs */
+    padding: 0.8rem 1.2rem; /* Adiciona padding dentro dos inputs */
+    border: none; /* Remove a borda dos inputs */
+    border-radius: 5px; /* Adiciona bordas arredondadas aos inputs */
+    box-shadow: 1px 1px 6px #0000001c; /* Adiciona sombra aos inputs */
+    font-size: 0.7rem; /* Define o tamanho da fonte dos inputs */
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75; /* Muda a cor de fundo dos inputs ao passar o mouse */
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid rgb(212, 14, 14); /* Adiciona contorno aos inputs quando focados */
+}
+
+.input-box input::placeholder {
+    color: #000000be; /* Define a cor do texto do placeholder */
+}
+
+.input-box select {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.input-box select:hover {
+    background-color: #eeeeee75; /* Muda a cor de fundo dos inputs ao passar o mouse */
+}
+
+.input-box select:focus-visible {
+    outline: 1px solid rgb(212, 14, 14); /* Adiciona contorno aos inputs quando focados */
+}
+
+.input-box input,
+.input-box select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12px;
+    color: #333;
+    box-shadow: 1px 1px 6px #0000001c; /* Adiciona sombra aos inputs */
+    content: " "; /* Adiciona conteúdo vazio após o título */
+    
+}
+
+.input-box label,
+.form-group {
+    font-size: 0.875rem; /* Define o tamanho da fonte dos labels e títulos */
+    font-weight: 600; /* Define o peso da fonte dos labels e títulos */
+    color: #000000c0; /* Define a cor dos labels e títulos */
+}
+
+.form-group {
+    width: 100%; /* Define a largura do grupo de formulário */
+    margin-top: 1rem; /* Adiciona margem superior ao grupo de formulário */
+    
+}
+
+.form-group label {
+    display: block; /* Exibe o label como um bloco */
+    margin-bottom: 0.5rem; /* Adiciona margem inferior ao label */
+    border: 5px;
+    
+}
+
+.form-group textarea:hover {
+    background-color: #eeeeee75; /* Muda a cor de fundo dos inputs ao passar o mouse */
+}
+
+.form-group textarea:focus-visible {
+    outline: 1px solid rgb(212, 14, 14); /* Adiciona contorno aos inputs quando focados */
+}
+
+.form-group textarea {
+    width: 100%; /* Define a largura do textarea */
+    padding: 0.8rem 1.2rem; /* Adiciona padding dentro do textarea */
+    border: 1px solid #ddd; /* Define a borda do textarea */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao textarea */
+    font-size: 0.875rem; /* Define o tamanho da fonte do textarea */
+    resize: none; /* Remove a capacidade de redimensionar o textarea */
+    box-shadow: 1px 1px 6px #0000001c; /* Adiciona sombra aos inputs */
+}
+
+.continue-button {
+    display: flex; /* Usa flexbox para o layout do botão de continuar */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    padding: 1rem; /* Adiciona padding ao botão de continuar */
+    background-color: #fff; /* Define a cor de fundo do botão de continuar */
+}
+
+.continue-button button {
+    width: 100%; /* Define a largura do botão */
+    border: none; /* Remove a borda do botão */
+    background-color: rgb(212, 14, 14); /* Define a cor de fundo do botão */
+    padding: 0.62rem; /* Adiciona padding dentro do botão */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao botão */
+    cursor: pointer; /* Muda o cursor para pointer ao passar o mouse */
+}
+.continue-button button {
+    width: 100%;
+    border: none;
+    background-color: rgb(212, 14, 14);
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button button:hover {
+    background-color: rgb(241, 0, 0);
+}
+
+.continue-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}

@@ -1,0 +1,171 @@
+h1, h2 {
+    text-align: center;
+}
+
+body {
+    background-color: lightgray;
+    max-width: 100%;
+}
+
+.menu {
+    width: 60%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: arial;
+    box-shadow: 0 0 15px 5px rgb(82, 82, 82);
+}
+
+.nome {
+    width: 423px;
+    text-align: left;
+}
+.txtunidade{
+    padding-left: 10px;
+}
+
+.titulo{
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.info {
+line-height: 0.25;
+padding-bottom: -95px;
+}
+
+.termo1{
+    padding-top: 10px;
+    font-family: arial;
+    font-size: 18px;
+    padding-left: 3%;
+    line-height: 0.25;
+}
+
+.termo2 {
+    font-size: 18px;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding-bottom: 25px;
+    line-height: 1.5;
+
+}
+
+.txtbairro{
+    text-align: right;
+    padding-left: 10px;
+}
+.txtcep{
+    padding-left: 10px;
+}
+
+.endereco{
+    width: 380px;
+}
+
+.cidade{
+    width: 410px;
+}
+.txtuf{
+padding-left: 10px;
+}
+
+.uf {
+    width:  112px;
+}
+
+.bairro {
+    width: 300px;
+}
+
+.radio{
+text-align: center;
+}
+
+.unidade{
+    width: 160px;
+}
+
+.info p {
+    display: inline-block;
+}
+
+.assinatura{
+    width: 30%
+
+}
+
+.chefia{
+    text-align: center;
+    line-height: 0.25;
+    padding-top: 20px;
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+
+.regime{
+    font-family: Arial;
+    font-size: 14;
+    line-height: 0.25;
+}
+
+table{
+    border: 1px solid;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.linha, td{
+    border: 1px solid;
+    width: 95px;
+
+}
+.produto{
+    border: 1px solid;
+}
+
+#date{
+    font-family: Arial;
+    font-size: 20;
+}
+
+#transportepublico {
+    width: 95%;
+}
+
+.assinaturaservidor{
+    text-align: left;
+    width: 25%;
+    margin-right: 30px;
+
+}
+.txtassinaturaservidor{
+    text-align: right;
+    padding-right: 80px;
+    line-height: 0.25;
+}
+.imgassinaturaservidor{
+    display: block;
+    margin-right: right;
+    margin-left: auto;
+    margin-bottom: -40px;
+}
+
+.tipotransporte{
+    width: 95%;
+}
+.numerolinha{
+    width: 95%;
+}
+.nomelinha{
+    width: 95%;
+}
+.empresa{
+    width: 95%;
+}
+.precotarifa{
+    width: 95%;
+}

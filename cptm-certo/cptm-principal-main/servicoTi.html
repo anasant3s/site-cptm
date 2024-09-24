@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/servicoTi.css">
+    <title>Formulario de Serviço de TI</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+    <div class="header" id="header">
+        <div class="logo-header">
+            <a href="index.html" id="">
+                <img src="img/cptm-logo.png" alt="Logo CPTM">
+            </a>
+        </div>
+        <div class="navigation-header">
+            <a href="index.html" class="active">Home</a>
+            <a href="https://www.cptm.sp.gov.br/a-companhia/Pages/a-companhia.aspx" class="active">Sobre Nós</a>
+            <a href="servicoTi.html" class="active">Serviço TI</a>
+            <a href="faleConosco.html" class="active">Fale Conosco</a>
+            <a href="solicitarVt.html" class="active">Solicitar VT</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="form-image-logo">
+            <img src="img/cptm-companhia.png" alt="Logo CPTM">
+        </div> <!-- Fim form image logo -->
+        <div class="form-image">
+            <img src="img/serie-8500-luz0-1080x720.webp" alt="">
+        </div>  <!-- Fim form image -->
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Solicitar Serviço TI</h1>
+                    </div>  <!-- Fim title -->
+                </div>  <!-- Fim form-header -->
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Nome</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu nome completo" required>
+                    </div> <!-- Fim input box -->
+
+                    <div class="input-box">
+                        <label for="matricula">Matrícula</label>
+                        <input id="number" type="text" name="number" placeholder="Digite sua matrícula" required>
+                    </div> <!-- Fim input box -->
+
+                    <div class="input-box">
+                        <label for="email">E-mail para Contato</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div> <!-- Fim input box -->
+
+                    <div class="input-box">
+                        <label for="setor">Setor</label>
+                        <input id="setor" type="text" name="setor" placeholder="Digite seu setor" required>
+                    </div>
+                    
+                    <div class="input-box">
+                        <label for="position">Cargo</label>
+                        <select name="position" id="position" role="presentation" required>
+                            <option selected disabled value="">Selecione seu cargo</option>
+                            <option value="aprendiz">Jovem Aprendiz</option>
+                            <option value="estagio">Estagiário</option>
+                            <option value="empregado">Empregado</option>
+                        </select>
+                        <div class="form-group">
+                            <label for="finalidade">Finalidade da Solicitação</label>
+                            <textarea class="form-control" id="finalidade" rows="3" placeholder="Descreva a finalidade da solicitação" required></textarea>
+                        </div> <!-- Fim form group -->
+                    </div>
+
+                  
+                </div> <!-- Fim input group -->
+
+                
+                <div class="continue-button">
+                    <button><a href="#">Solicitar</a> </button>
+                </div> <!-- Fim continue button -->
+            </form> <!-- Fim form action -->
+        </div> <!-- Fim form -->
+        <!-- <footer>
+            CPTM - Companhia Paulista de Tren Metropolitanos - Todos os direitos reservados - 2024
+        </footer> -->
+    </div> <!-- Fim container -->
+
+</body>
+</html>

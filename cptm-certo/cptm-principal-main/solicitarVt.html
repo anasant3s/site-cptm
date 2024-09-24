@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Vale Transporte</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" ></script> <!--blibioteca-->
+    <script src="script.js" defer></script>
+    <link href="css/solicitarVt.css" rel="Stylesheet"/>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="menu">
+        <main>
+            <article class="titulo">
+                <a href="index.html" id="">
+                    <h1><img src="img/cptm-logo.png" alt="Logo CPTM" width="213.3" height="61.6"></h1>
+                </a>
+            <section>
+                    <h2>Solicitação de Vale Transporte</h2>
+                    <hr>
+                </article>
+                    <article class="info">
+                     <label for="nomeid"><p class="txtnome">NOME: <input class="nome" type="Text" name="nome" required id="nomeid"></p></label> <label for="unidadeid"><p class="txtunidade">UNIDADE QUE TRABALHA: <input class="unidade" type="Text" name="unidade" required id="unidadeid"></p></label> 
+                    </article>
+                    <article class="info">
+                       <label for="enderecoid"><p class="txtendereco">ENDEREÇO: <input class="endereco" type="text" name="endereco" required id="enderecoid"></p></label> <label for="bairroid"><p class="txtbairro">BAIRRO: <input class="bairro" type="Text" name="bairro" required id="bairroid"></p></label>  
+                    </article>
+                    <article class="info">
+                       <label for="cidadeid"><p class="txtcidade">CIDADE: <input class="cidade" type="Text" name="cidade" id="cidadeid" required></p></label> <label for="cepid"><p class="txtcep"> CEP: <input class="cep" type="Text" name="cep" id="cepid" required></p></label> <label for="ufid"><p class="txtuf">UF: <input class="uf" type="Text" name="uf" id="ufid" required></p></label>
+                    </article>
+                <p class="radio">
+                    <label><input id="opto" type="radio" name="opto-naoopto" value="opto" checked> OPTO PELO VALE TRANSPORTE</label>
+                    <label><input id="naoopto" type="radio" name="opto-naoopto" value="nãoopto"> NÃO OPTO PELO VALE TRANSPORTE</label>
+                </p>
+                <h3 class="termo1">Nos termos do artigo 7 do Decreto 95.247/1987, solicito receber o Vale-Transporte e comprometo-me:</h3>
+                    <ol class="termo2">
+                        <li>a utilizá-lo exclusivamente para meu efetivo deslocamento residência-trabalho e vice-versa;</li>                        
+                        <li>a renovar anualmente ou sempre que ocorrer alteração em meu endereço residencial ou dos serviços e
+                            meios de transporte mais adequados ao meu deslocamento residência-trabalho e vice-versa;</li>
+                        <li>autorizo a descontar até 6% (seis por cento) do meu salário básico mensal para concorrer ao custeio do
+                            Vale-Transporte (conforme art. 9 do Decreto 95.247/1987);</li>
+                        <li>declaro estar ciente que a declaração falsa ou o uso indevido do Vale-Transporte constituem falta grave,
+                            conforme parágrafo 3 do art. 7 do Decreto 95.247/1987.</li>
+                    </ol>
+                    <hr>
+            </section>
+            <section>
+                    <!-- PARTE DAS INFORMAÇÕES DO VT -->
+                    <h2>Residência → Trabalho</h2>
+                        <table class="tabela1" align="center" >
+                            <tr class="linha">
+                                <td class="Produto">Tipo</td>
+                                <td class="Produto">Nº. da Linha</td>
+                                <td class="Produto">Nome da Linha</td>
+                                <td class="Produto">Empresa</td>
+                                <td class="Produto">Tarifa R$</td>
+                            </tr>
+                            <tr class="linha">
+                                <td class="Produto"><input class="tipotransporte" type="Text" name="tipotransporte" required></td>
+                                <td class="Produto"><input class="numerolinha" type="Text" name="numerolinha" required></td>
+                                <td class="Produto"><input class="nomelinha" type="Text" name="nomelinha" required></td>
+                                <td class="Produto"><input class="empresa" type="Text" name="empresa" required></td>
+                                <td class="Produto"><input class="precotarifa" type="Text" name="precotarifa" required></td>
+                            </tr>
+                            <tr class="linha">
+                                <td class="Produto"><input class="tipotransporte" type="Text" name="tipotransporte" required></td>
+                                <td class="Produto"><input class="numerolinha" type="Text" name="numerolinha" required></td>
+                                <td class="Produto"><input class="nomelinha" type="Text" name="nomelinha" required></td>
+                                <td class="Produto"><input class="empresa" type="Text" name="empresa" required></td>
+                                <td class="Produto"><input class="precotarifa" type="Text" name="precotarifa" required></td>
+                            </tr>
+                            <tr class="linha">
+                                <td class="Produto"><input class="tipotransporte" type="Text" name="tipotransporte" required></td>
+                                <td class="Produto"><input class="numerolinha" type="Text" name="numerolinha" required></td>
+                                <td class="Produto"><input class="nomelinha" type="Text" name="nomelinha" required></td>
+                                <td class="Produto"><input class="empresa" type="Text" name="empresa" required></td>
+                                <td class="Produto"><input class="precotarifa" type="Text" name="precotarifa" required></td>
+                            </tr>
+                            <tr class="linha">
+                                <td class="Produto"><input class="tipotransporte" type="Text" name="tipotransporte" required></td>
+                                <td class="Produto"><input class="numerolinha" type="Text" name="numerolinha" required></td>
+                                <td class="Produto"><input class="nomelinha" type="Text" name="nomelinha" required></td>
+                                <td class="Produto"><input class="empresa" type="Text" name="empresa" required></td>
+                                <td class="Produto"><input class="precotarifa" type="Text" name="precotarifa" required></td>
+                            </tr>
+                        </table>
+
+                    <h2>Trabalho → Residência</h2>
+                    <table class="tabela1" align="center">
+                        <td class="Produto">Tipo</td>
+                        <td class="Produto">Nº. da Linha</td>
+                        <td class="Produto">Nome da Linha</td>
+                        <td class="Produto">Empresa</td>
+                        <td class="Produto">Tarifa R$</td>
+                    </tr>
+                    <tr class="linha">
+                        <td class="Produto"><input class="tipotransporte" type="Text" name="tipotransporte" required></td>
+                        <td class="Produto"><input class="numerolinha" type="Text" name="numerolinha" required></td>
+                        <td class="Produto"><input class="nomelinha" type="Text" name="nomelinha" required></td>
+                        <td class="Produto"><input class="empresa" type="Text" name="empresa" required></td>
+                        <td class="Produto"><input class="precotarifa" type="Text" name="precotarifa" required></td>
+                    </tr>
+                    <tr class="linha">
+                        <td class="Produto"><input class="tipotransporte" type="Text" name="tipotransporte" required></td>
+                        <td class="Produto"><input class="numerolinha" type="Text" name="numerolinha" required></td>
+                        <td class="Produto"><input class="nomelinha" type="Text" name="nomelinha" required></td>
+                        <td class="Produto"><input class="empresa" type="Text" name="empresa" required></td>
+                        <td class="Produto"><input class="precotarifa" type="Text" name="precotarifa" required></td>
+                    </tr>
+                    <tr class="linha">
+                        <td class="Produto"><input class="tipotransporte" type="Text" name="tipotransporte" required></td>
+                        <td class="Produto"><input class="numerolinha" type="Text" name="numerolinha" required></td>
+                        <td class="Produto"><input class="nomelinha" type="Text" name="nomelinha" required></td>
+                        <td class="Produto"><input class="empresa" type="Text" name="empresa" required></td>
+                        <td class="Produto"><input class="precotarifa" type="Text" name="precotarifa" required></td>
+                    </tr>
+                    <tr class="linha">
+                        <td class="Produto"><input class="tipotransporte" type="Text" name="tipotransporte" required></td>
+                        <td class="Produto"><input class="numerolinha" type="Text" name="numerolinha" required></td>
+                        <td class="Produto"><input class="nomelinha" type="Text" name="nomelinha" required></td>
+                        <td class="Produto"><input class="empresa" type="Text" name="empresa" required></td>
+                        <td class="Produto"><input class="precotarifa" type="Text" name="precotarifa" required></td>
+                    </tr>
+                    
+                    </table>
+                    <p></p>
+                    <p>São Paulo, <input id="date" type="date" /></p>
+                    <img class="imgassinaturaservidor" src="img/Assinatura Servidor.png" width="30%">
+                    <p><hr class="assinaturaservidor" align="right"></p><!-- COLOCAR ASSINATURA DO SERVIDOR-->
+                                <P class="txtassinaturaservidor">Assinatura do Servidor</P>
+            </section> 
+                
+
+                    <!-- FIM DAS INFORMAÇÕES DO VT -->
+                    <fieldset>
+                        <article class="regime">
+                        Ciente, de acordo.
+                        <p>Declaro que o servidor acima qualificado exerce suas funções em regime:</p>
+                        <p><label><input id="diarista" type="radio" name="diarista-plantonista" value="diarista"> Diarista</label>
+                            <label><input id="plantonista" type="radio" name="diarista-plantonista" value="plantonista"> Plantonista</label></p>
+                        </article>
+                            <article class="chefia">
+                                <p> </p>
+                                <p><hr class="assinatura"></p><!-- COLOCAR ASSINATURA DA CHEFIA -->
+                                <P>Carimbo e assinatura da chefia imediata.</P>
+                                (Nome, R.G. e Cargo).
+                            </article>
+                    </fieldset>
+                    <b>OBS.: Anexar cópia de comprovante de residência "<u>com data atual</u>" e "<u>em nome do empregado</u>"(luz, telefone, extrato bancário, etc.). Preencher a máquina e/ou letra de forma.</b>
+
+        </main>
+    </div>
+</body>
+<footer>
+    
+</footer>
+</html>
